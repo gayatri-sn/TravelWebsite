@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-lg">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold text-blue-600">TravelWorld</a>
+        
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-6">
+          <a href="./index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+          <a href="./destinations.html" class="text-gray-600 hover:text-blue-600">Destinations</a>
+          <a href="./packages.html" class="text-gray-600 hover:text-blue-600">Packages</a>
+          <a href="./blog.html" class="text-gray-600 hover:text-blue-600">Blog</a>
+        </div>
+        
+        <!-- Mobile Menu Toggle -->
+        <label for="menu-toggle" class="md:hidden cursor-pointer">
+          <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </label>
+        <input type="checkbox" id="menu-toggle" class="hidden">
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div class="hidden flex-col space-y-2 px-4 pb-4" id="menu">
+          <a href="#home" class="block text-gray-600 hover:text-blue-600">Home</a>
+          <a href="#features" class="block text-gray-600 hover:text-blue-600">Features</a>
+          <a href="#travel-ideas" class="block text-gray-600 hover:text-blue-600">Travel Ideas</a>
+          <a href="#contact" class="block text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="home" class="bg-cover bg-center h-[500px] text-white" style="background-image: url('./images/mountain_bg.jpeg');">
+    <div class="h-full flex flex-col justify-center items-center bg-black bg-opacity-50">
+      <h1 class="text-4xl md:text-6xl font-bold">Discover the World</h1>
+      <p class="mt-4 text-lg md:text-xl">Explore breathtaking destinations and plan your adventure</p>
+      <button class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">Get Started</button>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Features</h2>
+      <!-- Content goes here -->
+    </div>
+  </section>
+
+  <!-- Travel Ideas -->
+  <section id="travel-ideas" class="py-16 bg-blue-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Travel and Enjoy</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="bg-blue-600 w-16 h-16 mx-auto rounded-full flex items-center justify-center text-white text-2xl">✈️</div>
+          <h3 class="text-lg font-bold mt-4">Adventure</h3>
+          <p class="text-gray-600">Unleash the thrill-seeker in you with adventurous experiences.</p>
+        </div>
+        <!-- Add more idea cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 Travel Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
