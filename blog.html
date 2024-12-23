@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog - TravelWorld</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-lg">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold text-blue-600">TravelWorld</a>
+        
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-6">
+          <a href="./index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+          <a href="./destinations.html" class="text-gray-600 hover:text-blue-600">Destinations</a>
+          <a href="./packages.html" class="text-gray-600 hover:text-blue-600">Packages</a>
+          <a href="./blog.html" class="text-gray-600 hover:text-blue-600">Blog</a>
+        </div>
+        
+        <!-- Mobile Menu Toggle -->
+        <label for="menu-toggle" class="md:hidden cursor-pointer">
+          <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </label>
+        <input type="checkbox" id="menu-toggle" class="hidden">
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div class="hidden flex-col space-y-2 px-4 pb-4" id="menu">
+          <a href="#home" class="block text-gray-600 hover:text-blue-600">Home</a>
+          <a href="#features" class="block text-gray-600 hover:text-blue-600">Features</a>
+          <a href="#travel-ideas" class="block text-gray-600 hover:text-blue-600">Travel Ideas</a>
+          <a href="#contact" class="block text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Header -->
+  <header class="bg-blue-600 text-white text-center py-16">
+    <h1 class="text-4xl md:text-6xl font-bold">Travel Blog</h1>
+    <p class="mt-4 text-lg md:text-xl">Explore stories, tips, and insights from our travel experts</p>
+  </header>
+
+  <!-- Blog Posts Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Latest Posts</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Blog Post 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="Blog Post 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Top 10 Adventure Destinations for Thrill Seekers</h3>
+            <p class="text-gray-600 mt-2">Discover the best adventure-filled destinations around the world for adrenaline junkies.</p>
+            <a href="#" class="text-blue-600 hover:underline mt-4 block">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="Blog Post 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">How to Travel on a Budget: Tips and Tricks</h3>
+            <p class="text-gray-600 mt-2">Planning a trip without breaking the bank? Check out these travel hacks for a budget-friendly vacation.</p>
+            <a href="#" class="text-blue-600 hover:underline mt-4 block">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="Blog Post 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Cultural Experiences You Must Have While Traveling</h3>
+            <p class="text-gray-600 mt-2">Explore the importance of immersing yourself in the culture of your travel destinations for an enriching experience.</p>
+            <a href="#" class="text-blue-600 hover:underline mt-4 block">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 4 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="Blog Post 4" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Family-Friendly Vacation Spots</h3>
+            <p class="text-gray-600 mt-2">Looking for the perfect family vacation? These destinations are ideal for family fun and bonding.</p>
+            <a href="#" class="text-blue-600 hover:underline mt-4 block">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 5 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="Blog Post 5" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">The Ultimate Guide to Luxury Travel</h3>
+            <p class="text-gray-600 mt-2">Experience the world in style with these luxurious travel experiences that offer the best in comfort and class.</p>
+            <a href="#" class="text-blue-600 hover:underline mt-4 block">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 6 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="Blog Post 6" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">How to Pack for Any Type of Trip</h3>
+            <p class="text-gray-600 mt-2">Master the art of packing efficiently and light, whether you're heading for a weekend getaway or a long journey.</p>
+            <a href="#" class="text-blue-600 hover:underline mt-4 block">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 TravelWorld. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
