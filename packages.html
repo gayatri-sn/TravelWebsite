@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Packages</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+      <!-- Navigation Bar -->
+  <nav class="bg-white shadow-lg">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold text-blue-600">TravelWorld</a>
+        
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-6">
+          <a href="./index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+          <a href="./destinations.html" class="text-gray-600 hover:text-blue-600">Destinations</a>
+          <a href="./packages.html" class="text-gray-600 hover:text-blue-600">Packages</a>
+          <a href="./blog.html" class="text-gray-600 hover:text-blue-600">Blog</a>
+        </div>
+        
+        <!-- Mobile Menu Toggle -->
+        <label for="menu-toggle" class="md:hidden cursor-pointer">
+          <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </label>
+        <input type="checkbox" id="menu-toggle" class="hidden">
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div class="hidden flex-col space-y-2 px-4 pb-4" id="menu">
+          <a href="#home" class="block text-gray-600 hover:text-blue-600">Home</a>
+          <a href="#features" class="block text-gray-600 hover:text-blue-600">Features</a>
+          <a href="#travel-ideas" class="block text-gray-600 hover:text-blue-600">Travel Ideas</a>
+          <a href="#contact" class="block text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+<!-- Search Bar -->
+<div class="py-8 bg-blue-50">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">Find Your Perfect Travel Package</h2>
+    <div class="relative inline-block w-full max-w-lg">
+      <input type="text" placeholder="Search packages..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-600">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16h4M12 12a4 4 0 100-8 4 4 0 000 8z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Packages Section -->
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Travel Packages</h2>
+
+    <!-- Packages Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- Basic Package -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="Basic Package" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Basic Package</h3>
+          <p class="text-gray-600 mt-2">A simple and affordable travel experience to explore new destinations.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Popular Package -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="Popular Package" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Popular Package</h3>
+          <p class="text-gray-600 mt-2">The most popular destinations loved by travelers around the world.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Book Now</button>
+        </div>
+      </div>
+
+      <!-- All-in-One Package -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="All-in-One Package" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold">All-in-One Package</h3>
+          <p class="text-gray-600 mt-2">A comprehensive package covering all major attractions for the ultimate experience.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Luxury Package -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="Luxury Package" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Luxury Package</h3>
+          <p class="text-gray-600 mt-2">Indulge in a luxurious travel experience with premium accommodations and services.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
