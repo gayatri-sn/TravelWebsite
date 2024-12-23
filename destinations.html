@@ -7,121 +7,155 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
-    <nav class="bg-white shadow-lg">
-        <div class="container mx-auto px-4">
-          <div class="flex justify-between items-center py-4">
-            <!-- Logo -->
-            <a href="index.html" class="text-2xl font-bold text-blue-600">TravelWorld</a>
-            
-            <!-- Navigation Links -->
-            <div class="hidden md:flex space-x-6">
-              <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
-              <a href="features.html" class="text-gray-600 hover:text-blue-600">Features</a>
-              <a href="destinations.html" class="text-gray-600 hover:text-blue-600">Destinations</a>
-              <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
-            </div>
-      
-            <!-- Mobile Menu Toggle -->
-            <label for="menu-toggle" class="md:hidden cursor-pointer">
-              <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-              </svg>
-            </label>
-            <input type="checkbox" id="menu-toggle" class="hidden">
-          </div>
-      
-          <!-- Mobile Menu -->
-          <div class="hidden md:hidden flex-col space-y-2 px-4 pb-4">
-            <a href="index.html" class="block text-gray-600 hover:text-blue-600">Home</a>
-            <a href="features.html" class="block text-gray-600 hover:text-blue-600">Features</a>
-            <a href="destinations.html" class="block text-gray-600 hover:text-blue-600">Destinations</a>
-            <a href="contact.html" class="block text-gray-600 hover:text-blue-600">Contact</a>
-          </div>
-        </div>
-      </nav>
-      
 
-  <!-- Header -->
-  <header class="bg-blue-600 text-white py-8">
-    <div class="container mx-auto px-4">
-      <h1 class="text-4xl font-bold text-center">Explore Our Destinations</h1>
-      <p class="text-center mt-2 text-lg">Discover the beauty and culture of each unique location</p>
+<!-- Navbar -->
+<nav class="bg-white shadow-lg">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <a href="index.html" class="text-2xl font-bold text-blue-600">TravelWorld</a>
+      
+      <!-- Navigation Links -->
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+        <a href="features.html" class="text-gray-600 hover:text-blue-600">Features</a>
+        <a href="destinations.html" class="text-gray-600 hover:text-blue-600">Destinations</a>
+        <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+      </div>
+
+
+
+      <!-- Mobile Menu Toggle -->
+      <label for="menu-toggle" class="md:hidden cursor-pointer">
+        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </label>
+      <input type="checkbox" id="menu-toggle" class="hidden">
     </div>
-  </header>
 
-  <!-- Destinations Section -->
-  <section class="py-16">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">Top Destinations</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        <!-- Destination Card -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="./images/italy.jpeg" alt="Destination" class="w-full h-70 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-bold">Rome, Italy</h3>
-            <p class="text-gray-600 mt-2">Discover ancient ruins, vibrant streets, and Italian charm.</p>
-            <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
-          </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex-col space-y-2 px-4 pb-4 md:hidden">
+      <a href="index.html" class="block text-gray-600 hover:text-blue-600">Home</a>
+      <a href="features.html" class="block text-gray-600 hover:text-blue-600">Features</a>
+      <a href="destinations.html" class="block text-gray-600 hover:text-blue-600">Destinations</a>
+      <a href="contact.html" class="block text-gray-600 hover:text-blue-600">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Header -->
+<header class="bg-blue-600 text-white py-8">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl font-bold">Explore Our Destinations</h1>
+    <p class="mt-2 text-lg">Discover the beauty and culture of each unique location.</p>
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div class="relative flex justify-center items-center py-8 bg-blue-600">
+    <div class="relative w-1/2 md:w-1/3 lg:w-1/4">
+      <input type="text" placeholder="Search destinations..." class="w-full px-6 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 placeholder-gray-500">
+      
+      <button class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-blue-700 hover:bg-blue-800 text-white rounded-full p-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16h4M12 12a4 4 0 100-8 4 4 0 000 8z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  
+
+<!-- Destinations Section -->
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Top Destinations</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- Destination Cards -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="./images/italy.jpeg" alt="Rome, Italy" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Rome, Italy</h3>
+          <p class="text-gray-600 mt-2">Discover ancient ruins and Italian charm.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
         </div>
-        <!-- More Destination Cards -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="./images/Paris.jpeg" alt="Destination" class="w-full h-70 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-bold">Paris, France</h3>
-            <p class="text-gray-600 mt-2">Experience romance and culture in the city of lights.</p>
-            <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
-          </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="./images/Paris.jpeg" alt="Paris, France" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Paris, France</h3>
+          <p class="text-gray-600 mt-2">Experience romance in the city of lights.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
         </div>
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="./images/Maldives.jpeg" alt="Destination" class="w-full h-70 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-bold">Maldives</h3>
-            <p class="text-gray-600 mt-2">Relax on pristine beaches and soak in tropical beauty.</p>
-            <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
-          </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="./images/Maldives.jpeg" alt="Maldives" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Maldives</h3>
+          <p class="text-gray-600 mt-2">Relax on pristine beaches.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
         </div>
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="https://via.placeholder.com/400" alt="Destination" class="w-full h-70 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-bold">Kyoto, Japan</h3>
-            <p class="text-gray-600 mt-2">Experience tranquility in stunning temples and gardens.</p>
-            <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
-          </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="./images/London.jpeg" alt="London, UK" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">London, UK</h3>
+          <p class="text-gray-600 mt-2">Explore iconic landmarks and history.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
         </div>
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="./images/Kerala.jpeg" alt="Destination" class="w-full h-70 object-cover">
-            <div class="p-4">
-              <h3 class="text-lg font-bold">Kerala</h3>
-              <p class="text-gray-600 mt-2">God's Own Country – A Paradise of Backwaters, Beaches, and Bliss.</p>
-              <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="./images/Himalayas.jpeg" alt="Destination" class="w-full h-70 object-cover">
-            <div class="p-4">
-              <h3 class="text-lg font-bold">Himalayas (Trek)</h3>
-              <p class="text-gray-600 mt-2">Reach New Heights – Explore the Serene Majesty of the Himalayas</p>
-              <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="https://via.placeholder.com/400" alt="Destination" class="w-full h-70 object-cover">
-            <div class="p-4">
-              <h3 class="text-lg font-bold">Eqypt</h3>
-              <p class="text-gray-600 mt-2">Unveil the Mysteries of the Pharaohs – Where History Meets Timeless Majesty</p>
-              <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
-            </div>
-          </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="./images/Bali.jpeg" alt="Bali, Indonesia" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Bali, Indonesia</h3>
+          <p class="text-gray-600 mt-2">Experience paradise and vibrant culture.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="./images/Delhi.jpeg" alt="Delhi, India" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Delhi, India</h3>
+          <p class="text-gray-600 mt-2">A blend of history and modernity.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="./images/NYC.jpeg" alt="New York City" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">New York City</h3>
+          <p class="text-gray-600 mt-2">The city that never sleeps.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="./images/Jaipur.jpeg" alt="Jaipur, India" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Jaipur, India</h3>
+          <p class="text-gray-600 mt-2">Discover the pink city's royal charm.</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Explore</button>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto px-4 text-center">
-      <p>&copy; 2024 Travel Website. All rights reserved.</p>
-    </div>
-  </footer>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-6">
+  <div class="container mx-auto px-4 text-center">
+    <p>&copy; 2024 Travel Website. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Toggle mobile menu visibility
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuToggle.addEventListener('change', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 
 </body>
 </html>
