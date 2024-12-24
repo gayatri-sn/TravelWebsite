@@ -3,25 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Website</title>
+  <title>TravelWorld</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Navigation Bar -->
-  <nav class="bg-white shadow-lg">
-    <div class="container mx-auto px-4">
-      <div class="flex justify-between items-center py-4">
-        <!-- Logo -->
-        <a href="#" class="text-2xl font-bold text-blue-600">TravelWorld</a>
-        
-        <!-- Navigation Links -->
-        <div class="hidden md:flex space-x-6">
-          <a href="./index.html" class="text-gray-600 hover:text-blue-600">Home</a>
-          <a href="./destinations.html" class="text-gray-600 hover:text-blue-600">Destinations</a>
-          <a href="./packages.html" class="text-gray-600 hover:text-blue-600">Packages</a>
-          <a href="./blog.html" class="text-gray-600 hover:text-blue-600">Blog</a>
-        </div>
+  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-lg shadow-md z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-blue-600">TravelWorld</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="./index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+        <a href="./destinations.html" class="text-gray-600 hover:text-blue-600">Destinations</a>
+        <a href="./packages.html" class="text-gray-600 hover:text-blue-600">Packages</a>
+        <a href="./blog.html" class="text-gray-600 hover:text-blue-600">Blog</a>
+      </div>
+    </div>
+  </nav>
+  
         
         <!-- Mobile Menu Toggle -->
         <label for="menu-toggle" class="md:hidden cursor-pointer">
@@ -45,21 +44,99 @@
   </nav>
 
   <!-- Header -->
-  <header id="home" class="bg-cover bg-center h-[500px] text-white" style="background-image: url('./images/mountain_bg.jpeg');">
+  <header id="home" class="bg-cover bg-center h-[500px] text-white" style="background-image: url('./images/bg.jpeg');">
     <div class="h-full flex flex-col justify-center items-center bg-black bg-opacity-50">
       <h1 class="text-4xl md:text-6xl font-bold">Discover the World</h1>
       <p class="mt-4 text-lg md:text-xl">Explore breathtaking destinations and plan your adventure</p>
-      <button class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">Get Started</button>
+      <a href="./destinations.html">
+        <button class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">
+          Get Started
+        </button>
+      </a>
     </div>
   </header>
 
   <!-- Features -->
   <section id="features" class="py-16">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Features</h2>
-      <!-- Content goes here -->
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Personalized Travel Planning -->
+        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-4xl mb-4 text-blue-600">
+            <i class="fas fa-map"></i> <!-- Replace with the appropriate icon -->
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Personalized Travel Planning</h3>
+          <p class="text-gray-600">We offer tailor-made travel itineraries to suit your preferences, whether you're looking for adventure, relaxation, or cultural experiences.</p>
+        </div>
+        
+        <!-- Expert Travel Guides -->
+        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-4xl mb-4 text-green-600">
+            <i class="fas fa-user-tie"></i> <!-- Replace with the appropriate icon -->
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Expert Travel Guides</h3>
+          <p class="text-gray-600">Our team of experienced travel experts will guide you every step of the way, ensuring a smooth and memorable journey.</p>
+        </div>
+  
+        <!-- 24/7 Customer Support -->
+        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-4xl mb-4 text-yellow-600">
+            <i class="fas fa-headset"></i> <!-- Replace with the appropriate icon -->
+          </div>
+          <h3 class="text-xl font-semibold mb-2">24/7 Customer Support</h3>
+          <p class="text-gray-600">Need assistance? Our customer support is available round-the-clock to help with any questions or issues during your trip.</p>
+        </div>
+  
+        <!-- Exclusive Travel Deals -->
+        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-4xl mb-4 text-red-600">
+            <i class="fas fa-tag"></i> <!-- Replace with the appropriate icon -->
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Exclusive Travel Deals</h3>
+          <p class="text-gray-600">Access exclusive offers and discounts on popular travel packages, flights, and hotels.</p>
+        </div>
+  
+        <!-- Sustainable Travel Options -->
+        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-4xl mb-4 text-green-600">
+            <i class="fas fa-leaf"></i> <!-- Replace with the appropriate icon -->
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Sustainable Travel Options</h3>
+          <p class="text-gray-600">We promote eco-friendly travel options that help preserve the environment, ensuring sustainable adventures for future generations.</p>
+        </div>
+  
+        <!-- Group and Family Travel -->
+        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-4xl mb-4 text-purple-600">
+            <i class="fas fa-users"></i> <!-- Replace with the appropriate icon -->
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Group and Family Travel</h3>
+          <p class="text-gray-600">Specialized group and family travel packages designed for creating unforgettable memories with your loved ones.</p>
+        </div>
+  
+        <!-- Luxury Travel Experiences -->
+        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-4xl mb-4 text-yellow-600">
+            <i class="fas fa-crown"></i> <!-- Replace with the appropriate icon -->
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Luxury Travel Experiences</h3>
+          <p class="text-gray-600">Indulge in luxury travel experiences with 5-star accommodations, private tours, and VIP treatment.</p>
+        </div>
+  
+        <!-- Flexible Payment Plans -->
+        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-4xl mb-4 text-blue-600">
+            <i class="fas fa-credit-card"></i> <!-- Replace with the appropriate icon -->
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Flexible Payment Plans</h3>
+          <p class="text-gray-600">We offer flexible payment options to make your dream vacation more affordable and accessible.</p>
+        </div>
+      </div>
     </div>
   </section>
+  
 
 <!-- Travel Ideas -->
 <section id="travel-ideas" class="py-16 bg-blue-50">
@@ -107,12 +184,34 @@
       </div>
     </div>
   </section>
+
+  <section id="testimonials" class="py-16 bg-blue-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What Our Customers Say</h2>
+      
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <p class="text-gray-600 italic">"The trip was fantastic! I will definitely book again."</p>
+          <h3 class="mt-4 text-lg font-bold text-blue-600">- John D.</h3>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <p class="text-gray-600 italic">"I booked a trip with TravelWorld to Jaipur. The entire trip was so nice and our tour guide was really fun. The entire travel experience will be a great memory forever."</p>
+          <h3 class="mt-4 text-lg font-bold text-blue-600">- Raj S. </h3>
+        </div>
+      
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <p class="text-gray-600 italic">""TravelWorld made my vacation experience seamless from start to finish. The team was incredibly helpful in organizing my itinerary, and everything went off without a hitch. I especially appreciated the personal touches and detailed guidance. I will definitely be booking my next trip with them!""</p>
+          <h3 class="mt-4 text-lg font-bold text-blue-600">- Maya R.</h3>
+        </div>
+
+    </div>
+  </section>
   
   
   <!-- Footer -->
   <footer id="contact" class="bg-gray-800 text-white py-8">
     <div class="container mx-auto px-4 text-center">
-      <p>&copy; 2024 Travel Website. All rights reserved.</p>
+      <p>&copy; 2024 TravelWorld. All rights reserved.</p>
     </div>
   </footer>
 
